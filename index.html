@@ -4,22 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supermercado A: Ofertas de Delivery</title>
+    <meta name="description" content="Modelo de uma página HTML & CSS responsiva de um supermercado.">
+    <link rel="stylesheet" type="text/css" href="css/page.css">
+    <link rel="icon" href="imagens/logoA.png">
+    <title>Supermercado A: As Melhores Ofertas de Delivery</title>
 </head>
 <body>
     <header>
-        <img src="imagens/logoA.png" width="100" height="100" />
-        <h1>Supermercado A</h1>
+        <nav>
+            <div class="logomercado">
+                <a class="logo" href="">Supermercado<img id="logoA" src="imagens/logoA.png"></a>
+            </div>
+            <div class="mobilemenu">
+                <div class="line 1"></div>
+                <div class="line 2"></div>
+                <div class="line 3"></div>
+            </div>
+            <ul class="navlist">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="/">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-
     <main>
-        <p>Produtos aqui</p>
+        <section id="home" class="content">
+            <div class="box">
+                <div class="container">
+                    <h4>Bem vindo(a) ao Supermercado A!</h4>
+                    <h1>Aqui você compra<br>sem ir ao mercado.</h1>
+                    <p>Facilitamos suas compras, oferecendo<br>os melhores preços e produtos.</p>
+                    <button class="register"><span>Cadastre-se</span></button>
+                    <span id="logintxt">Comece agora</span>
+                </div>
+                <img src="imagens/produtos.png" id="produtosimg" />
+            </div>
+        </section>
+        <section id="ofertas" class="main-content">
+            <div class="promocoes">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+                </svg>
+                <div class="economic">
+                    <h3>Ofertas imperdíveis!</h3>
+                    <button id="oferta-btn"><span>Ver promoções</span></button>
+                </div>
+            </div>
+        </section>
+        <section id="produtos" class="itens-titulo">
+            <div class="precos">
+                <h4>Simples assim ; )</h4>
+                <h3>Todos os produtos<br>que você precisa<br>em um só lugar</h3>
+            </div>
+        </section>
     </main>
-
-    <footer>
-        <p>Íconnes das redes sociais</p>
-        <p>RGM e nome dos integrantes</p>
-    </footer>
-
 </body>
 </html>

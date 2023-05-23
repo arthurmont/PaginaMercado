@@ -1,4 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Montserrat:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 8vh;
+}
+
+a {
+    color: #f0f8ff;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 5px;
+}
+
+#logoA {
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+}
+
+.logomercado {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 50px;
+}
+
+nav {
+    z-index: 1;
+    height: 8vh;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ef233c;
+    border-top: 5px solid #f0f8ff;
+    box-shadow: 10px 10px 20px #cccccc;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+}
+
+.navlist li {
+    padding-top: 15px;
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.navlist li a {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mobilemenu div {
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    background: #fff;
+}
+
+.mobilemenu {
+    display: none;
+    cursor: pointer;
+}
+
+.navlist.active {
+    transform: translateX(0);
+}
+
+.container {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 150px;
+    top: 100px;
+    max-width: 500px;
+    height: 300px;
+}
+
+.container h4 {
+    font-size: 17px;
+    font-style: normal;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    padding: 10px 10px 0 10px;
+    align-items: last baseline;
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    line-height: 58px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container p {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 21px;
+    line-height: 32px;
+    font-style: normal;
+    font-family: 'Lato', sans-serif;
+}
+
+.register {
+    width: 300px;
+    border: none;
+    padding: 15px 0;
+    border-radius: 20px;
+    margin-left: -170px;
+    background-color: #ef233c;
+}
+
+.register span {
+    color: #f0f8ff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logintxt {
+    display: flex;
+    font-size: 15px;
+    color: #999999;
+    align-items: center;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    height: calc(100% - 15%);
+}
+
+#produtosimg {
+    width: 530px;
+    height: 330px;
+    position: absolute;
+    right: 100px;
+    top: 180px;
+}
+
+.main-content {
+    height: calc(100% - 25%);
+    background: -webkit-repeating-linear-gradient(#e8112b, #ef235e);
+}
+
+.promocoes {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.promocoes svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.promocoes {
+    fill: #FFFFFF;
+}
+
+.economic {
+    gap: 32px;
+    right: 90px;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    max-width: 500px;
+    max-height: 220px;
+}
+
+.economic h3 {
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#oferta-btn {
+    width: 300px;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+#oferta-btn span {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.itens-titulo {
+    display: flex;
+    position: relative;
+    height: 350px;
+    justify-content: center;
+}
+
+.precos {
+    gap: 32px;
+    top: 40px;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    max-width: 500px;
+    max-height: 260px;
+}
+
+.precos h4 {
+    font-size: 17px;
+    font-style: normal;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 0 10px;
+}
+
+.precos h3 {
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
